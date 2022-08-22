@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="student-project" />
+        <module name="student-crud" />
+        <module name="one-to-one-uni" />
+        <module name="first-cup" />
+        <module name="Car-Project" />
+        <module name="student-crud-save-persist" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
