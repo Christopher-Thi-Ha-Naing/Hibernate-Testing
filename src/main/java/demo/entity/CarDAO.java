@@ -39,9 +39,9 @@ public class CarDAO {
         manufacturer2.addCar(car2);
         manufacturer3.addCar(car3);
 
-        car1.addInsurance(insurance1);
-        car2.addInsurance(insurance1);
-        car3.addInsurance(insurance2);
+        insurance1.addCar(car1);
+        insurance2.addCar(car2);
+        insurance1.addCar(car3);
 
         car1.addOwner(owner1);
         car1.addOwner(owner2);

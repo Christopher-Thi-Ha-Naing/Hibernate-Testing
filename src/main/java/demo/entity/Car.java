@@ -23,9 +23,9 @@ public class Car {
     @JoinColumn(name = "manufacturer_id")
     private CarManufacturer carManufacturer;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinTable(name = "car_insurance")
-    private List<Insurance> insuranceList=new ArrayList<>();
+    private Insurance insuranceList;
 
     @ManyToMany(mappedBy = "carList",cascade = CascadeType.PERSIST)
     private List<Owner> ownerList=new ArrayList<>();
@@ -43,10 +43,6 @@ public class Car {
         this.millage = millage;
     }
 
-    public void addInsurance(Insurance insurance){
-        insuranceList.add(insurance);
-        insurance.getCarList().add(this);
-    }
 
     public void addOwner(Owner owner){
         owner.getCarList().add(this);
